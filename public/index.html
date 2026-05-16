@@ -3,27 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Gali Desawar Community</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '924641720572476');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=924641720572476&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<!-- Meta Pixel Code --> <script> !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '924641720572476'); fbq('track', 'PageView'); </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=924641720572476&ev=PageView&noscript=1" /></noscript> <!-- End Meta Pixel Code -->
+
+
+
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -55,14 +45,17 @@ body{
 }
 
 @keyframes fadeIn{
+
   from{
     opacity:0;
     transform:translateY(30px);
   }
+
   to{
     opacity:1;
     transform:translateY(0);
   }
+
 }
 
 .badge{
@@ -88,26 +81,6 @@ body{
   opacity:0.85;
   line-height:1.8;
   margin-bottom:25px;
-}
-
-.telegram-btn{
-  display:block;
-  width:100%;
-  padding:16px;
-  margin:15px 0;
-  border-radius:50px;
-  background:#fff;
-  color:#000;
-  text-decoration:none;
-  font-size:15px;
-  font-weight:700;
-  transition:0.3s;
-}
-
-.telegram-btn:hover{
-  background:#000;
-  color:#fff;
-  transform:translateY(-2px);
 }
 
 .description{
@@ -162,6 +135,38 @@ body{
   opacity:0.7;
 }
 
+/* BUTTON STYLE */
+
+.join-btn{
+  width:100%;
+  padding:16px;
+  margin-top:18px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#229ED9,#0088cc);
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,136,204,0.35);
+}
+
+.join-btn img{
+  width:24px;
+  height:24px;
+}
+
+.join-btn:hover{
+  transform:translateY(-2px) scale(1.02);
+}
+
+/* MOBILE */
+
 @media(max-width:600px){
 
   .card{
@@ -173,21 +178,93 @@ body{
   }
 
 }
+
+/* ✅ PREMIUM POPUP */
+
+.popup{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:320px;
+    background:rgba(17,24,39,0.96);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:14px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 35px rgba(0,0,0,0.45);
+    transform:translateX(400px);
+    opacity:0;
+    transition:0.5s;
+    z-index:9999;
+}
+
+.popup.show{
+    transform:translateX(0);
+    opacity:1;
+}
+
+.popup-logo{
+    width:58px;
+    height:58px;
+    border-radius:14px;
+    object-fit:cover;
+}
+
+.popup-text{
+    font-size:13px;
+    line-height:1.6;
+    color:#fff;
+}
+
+.popup-text a{
+    color:#4cc9ff;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.popup-badge{
+    display:inline-block;
+    background:#16a34a;
+    color:#fff;
+    font-size:10px;
+    padding:4px 8px;
+    border-radius:30px;
+    margin-bottom:6px;
+    font-weight:700;
+}
+
+@media(max-width:600px){
+
+    .popup{
+        width:92%;
+        right:4%;
+        bottom:15px;
+    }
+
+}
 </style>
 </head>
-<body>
 
+<body>
 
 <div class="card">
 
-  <div class="badge">🔥 Official Telegram Community</div>
+  <div class="badge">
+    🔥 Official Telegram Community
+  </div>
 
   <!-- JOIN IMAGE -->
   <div class="join-image">
-    <a href="https://t.me/+eQlu71lfy100MWI9"
-       class="track-btn">
+
+    <a href="https://t.me/+eQlu71lfy100MWI9" class="track-btn">
+
       <img src="g.png" alt="Join Telegram">
+
     </a>
+
   </div>
 
   <div class="main-title">
@@ -199,85 +276,160 @@ body{
   </div>
 
   <!-- BUTTON 1 -->
-  <a href="https://t.me/+eQlu71lfy100MWI9"
-     class="telegram-btn track-btn">
-     📩 JOIN TELEGRAM CHANNEL
-  </a>
+  <button class="join-btn track-btn" id="joinBtn">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+
+    JOIN TELEGRAM CHANNEL
+
+  </button>
 
   <div class="description">
     हमारी एक्टिव कम्युनिटी से जुड़ें और रोज़ाना अपडेट, डिस्कशन और जानकारी सबसे पहले प्राप्त करें।
   </div>
 
   <!-- BUTTON 2 -->
-  <a href="https://t.me/+eQlu71lfy100MWI9"
-     class="telegram-btn track-btn">
-     🚀 GET DAILY UPDATES
-  </a>
+  <button class="join-btn track-btn" id="vipBtn">
+    🚀 GET DAILY UPDATES
+  </button>
 
   <!-- COMMUNITY IMAGE -->
   <div class="king-section">
-    <a href="https://t.me/+eQlu71lfy100MWI9"
-       class="track-btn">
+
+    <a href="https://t.me/+eQlu71lfy100MWI9" class="track-btn">
+
       <img src="k.jpeg" alt="Community">
+
     </a>
+
   </div>
 
+  <!-- FEATURES -->
   <div class="features">
+
     <p>✔ FREE TELEGRAM ACCESS</p>
     <p>✔ FAST DAILY UPDATES</p>
     <p>✔ ACTIVE COMMUNITY</p>
     <p>✔ SIMPLE & EASY TO JOIN</p>
+
   </div>
 
+  <!-- EXTRA -->
   <div class="extra">
+
     <p>🔥 LIMITED VIP ACCESS</p>
     <p>💎 REAL TIME NOTIFICATIONS</p>
     <p>⚡ QUICK ALERTS</p>
     <p>🎯 DAILY ACTIVE MEMBERS</p>
+
   </div>
 
+  <!-- EXTRA INFO -->
   <div class="extra-info">
+
     <h3>Why Join Us?</h3>
+
     <p>📢 Instant Telegram Notifications</p>
     <p>📊 Daily Information Sharing</p>
     <p>👥 Large Active Community</p>
     <p>🚀 Easy Mobile Access</p>
+
   </div>
 
   <!-- FINAL BUTTON -->
-  <a href="https://t.me/+eQlu71lfy100MWI9"
-     class="telegram-btn track-btn">
-     🔔 SUBSCRIBE NOW
-  </a>
+  <button class="join-btn track-btn" id="subscribeBtn">
+    🔔 SUBSCRIBE NOW
+  </button>
 
+  <!-- FOOTER -->
   <div class="footer">
     © 2026 Gali Desawar Community
   </div>
 
 </div>
 
-<!-- LEAD CONVERSION TRACKING -->
+<!-- ✅ PREMIUM RIGHT POPUP -->
+<div id="adPopup" class="popup">
+
+    <img src="ka.jpg" class="popup-logo" alt="Agency Logo">
+
+    <div class="popup-text">
+
+        <span class="popup-badge">✔ Verified Ads Partner</span>
+
+        Ads setup managed by
+
+        <a href="https://t.me/+hwUyreNlEtZjMmY1" target="_blank">
+            Kavi Ads Agency
+        </a>
+
+    </div>
+
+</div>
+
+<!-- META LEAD TRACKING (UPDATED STYLE) -->
+<!-- META LEAD TRACKING (FINAL CLEAN VERSION) -->
 <script>
 
-document.querySelectorAll(".track-btn").forEach(function(button){
+const TELEGRAM_LINK = "https://t.me/+eQlu71lfy100MWI9";
 
-    button.addEventListener("click", function(e){
+const popup = document.getElementById("adPopup");
+const joinBtn = document.getElementById("joinBtn");
+const vipBtn = document.getElementById("vipBtn");
+const subscribeBtn = document.getElementById("subscribeBtn");
 
-        e.preventDefault();
+/* PREVENT DOUBLE LEAD FIRE */
+let leadFired = false;
 
-        const url = this.href;
+/* MAIN CLICK HANDLER */
+function handleJoinClick(e){
 
-        /* Meta Lead Event */
-        fbq('track', 'Lead');
+    e.preventDefault();
 
-        /* Redirect to Telegram */
-        setTimeout(function(){
-            window.open(url, "_blank");
-        }, 300);
+    /* FIRE LEAD ONLY ONCE */
+    if(!leadFired){
+        leadFired = true;
 
-    });
+        if(typeof fbq === "function"){
+            fbq('track', 'Lead');
+        }
+    }
 
-});
+    /* REDIRECT */
+    setTimeout(function(){
+        window.location.href = TELEGRAM_LINK;
+    }, 300);
+}
+
+/* ATTACH EVENTS SAFELY */
+if(joinBtn){
+    joinBtn.addEventListener("click", handleJoinClick);
+}
+
+if(vipBtn){
+    vipBtn.addEventListener("click", handleJoinClick);
+}
+
+if(subscribeBtn){
+    subscribeBtn.addEventListener("click", handleJoinClick);
+}
+
+/* POPUP HANDLER */
+function showPopup(){
+
+    if(!popup) return;
+
+    popup.classList.add("show");
+
+    setTimeout(function(){
+        popup.classList.remove("show");
+    }, 4000);
+
+}
+
+/* AUTO POPUP LOOP */
+setTimeout(showPopup, 2000);
+setInterval(showPopup, 12000);
 
 </script>
 </body>
